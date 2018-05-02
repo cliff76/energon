@@ -19,7 +19,7 @@
     <p class="life-container">
       Weapons increase the attack strength of your Decepticon.
     </p>
-    <p *ngFor="let weapon of weaponList">
+    <p *ngFor="let weapon of weaponList; let i = index" (click)="removeWeapon(i)">
       {{weapon}}
     </p>
   </div>
