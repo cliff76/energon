@@ -1,0 +1,26 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Add a weapon list item</p>
+  </div>
+  <div class="col">
+    <p>Weapon list {{itemCount}} weapons</p>
+  </div>
+</div>
+<div class="container color-light">
+  <div class="col">
+    <p class="sm">Use the form below to add a new set of stock weaponry for your Decepticon</p>
+    <form>
+      <input type="text" class="txt" name="weapon" placeholder="[enter weapon name]" [(ngModel)]="weaponText">
+
+      <input type="submit" class="btn" [value]="btnText" (click)="addWeapon()">
+    </form>
+  </div>
+  <div class="col">
+    <p class="life-container">
+      Weapons increase the attack strength of your Decepticon.
+    </p>
+    <p *ngFor="let weapon of weaponList">
+      {{weapon}}
+    </p>
+  </div>
+</div>
