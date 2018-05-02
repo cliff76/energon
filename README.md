@@ -1,6 +1,7 @@
 # Energon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project is created from the Free Udemy Angular 5 course.
+https://www.udemy.com/angular-5/learn/v4/t/lecture/8597324?start=0
 
 ## Development server
 
